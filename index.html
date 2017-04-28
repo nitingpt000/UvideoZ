@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>SearchVidz</title>
+<link type="text/css" href="css/jquery.fancybox.css" rel="stylesheet">
+       <link type="text/css" href="css/jquery.fancybox-buttons.css" rel="stylesheet">
+       <link type="text/css" href="css/jquery.fancybox-thumbs.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Search<span>VideoZ</span></h1>
+                <p>Search all youtube Videos</p>
+            </header>
+            <section>
+            <form id="search-form" name="search-form" onsubmit="return search()">
+                <div class="fieldContainer">
+                    <input type="search" id="query" class="search-field" placeholder="Search youtube...">
+                    <input type="submit" id="search-btn" name="search-btn" value="">
+                </div>
+            </form>
+            <ul id="results"></ul>
+            <div class="buttons"></div>
+
+            </section>
+            <footer>
+                Copyright &copy; 2017 Ace Inc. All Right Reserved.
+            </footer>
+        </div>
+        
+        <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".fancybox").fancybox();
+            });
+        </script>
+    </body>
+</html>
